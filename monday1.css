@@ -1,23 +1,29 @@
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header, main, footer
 {
     width: 100%;
-    margin: 1 rem auto;
+    margin: 1rem auto;
     border: 1px solid black;
     padding: 1rem;
     background-color: aqua;
 
 }
 
-main
-{
-    display:grid;
+main {
+    flex: 1;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    gap: 1rem;
 }
-
 section
 {
 padding: 1rem;
