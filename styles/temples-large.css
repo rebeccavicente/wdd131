@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px){
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+}
+
+header h1{
+    margin:0;
+}
+
+/* Hide the hamburger on large screens */
+#menu{
+    display:none;
+}
+
+/* Always show navigation on large screens */
+nav{
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+}
+
+.gallery{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
