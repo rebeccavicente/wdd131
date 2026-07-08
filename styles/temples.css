@@ -1,30 +1,122 @@
-@media only screen and (min-width: 768px){
+/* Google Font */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Header */
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:1rem 2rem;
+    background:#4b1369;
+    color:white;
+    padding:1rem;
+    position:relative;
 }
+
+
+/* Hamburger button */
+
+#menu{
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    position:absolute;
+    right:1rem;
+    top:1rem;
+    cursor:pointer;
+}
+
+
 
 header h1{
-    margin:0;
+    text-align:center;
+    margin-bottom:1rem;
 }
 
-/* Hide the hamburger on large screens */
-#menu{
-    display:none;
-}
+/* Navigation */
 
-/* Always show navigation on large screens */
+/* Hide the navigation by default on mobile */
 nav{
-    display:flex;
-    flex-direction:row;
-    gap:1rem;
+    display: none;
+    flex-direction: column;
 }
+
+/* Show it when JavaScript adds the class */
+nav.show{
+    display: flex;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:.75rem;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#4b1369;
+    border-radius:5px;
+}
+
+/* Main */
+
+main{
+    max-width:900px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+main h2{
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+/* Gallery */
 
 .gallery{
-    grid-template-columns:repeat(3,1fr);
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
 }
 
+figure{
+    text-align:center;
 }
+
+figure img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+figcaption{
+    margin-top:.5rem;
+    font-size:.9rem;
+}
+
+/* Footer */
+
+footer{
+    margin-top:2rem;
+    background:#4b1369;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
+
+
