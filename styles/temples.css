@@ -45,9 +45,15 @@ header h1{
 
 /* Navigation */
 
+/* Hide the navigation by default on mobile */
 nav{
-    display:none;
-    flex-direction:column;
+    display: none;
+    flex-direction: column;
+}
+
+/* Show it when JavaScript adds the class */
+nav.show{
+    display: flex;
 }
 
 nav a{
