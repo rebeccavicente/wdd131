@@ -39,44 +39,60 @@ picture img{
 
 .data,
 .weather{
-
-    position:absolute;
-
-    background:var(--white);
-
-    padding:20px;
-
-    box-shadow:0 0 15px var(--shadow);
-
+    position: absolute;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 0 15px var(--shadow);
+    overflow: visible;   /* add this */
 }
 
 .data{
-    top:50px;
-    left:30px;
+    top: 50px;
+    left: 30px;
+    width: 320px;
+    height: 400px;
 }
 
 .weather{
-    bottom:40px;
-    right:30px;
+    bottom: 40px;
+    right: 30px;
+    width: 200px;
+    height: 250px;
 }
 
 .data h2,
 .weather h2{
+    position: absolute;
+    top: 10px;
+    left: -10px;
 
-    background:var(--green);
+    background: var(--green);
+    color: white;
 
-    color:white;
+    padding: 15px 20px;
+    margin: 0;
 
-    padding:15px;
+}
+.data h2{
+    width: 280px;
+}
 
-    margin:-20px -20px 20px;
+.weather h2{
+    width: 180px;   /* Adjust until you like it */
+}
 
+.data p:first-of-type,
+.weather img,
+.weather p:first-of-type{
+    margin-top: 90px;
 }
 
 .data p,
 .weather p{
 
-    margin:10px 0;
+    margin:18px 0;
+    text-align: right;
+    width: 100%;
 
 }
 
@@ -85,7 +101,7 @@ picture img{
 }
 
 .mobile-icon{
-    display: block;
+    display: none;
     width: 70px;
     margin: 20px auto;
 }
@@ -103,7 +119,6 @@ footer{
 }
 
 @media (max-width:800px){
-
     main{
         display:flex;
         flex-direction:column;
