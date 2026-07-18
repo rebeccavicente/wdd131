@@ -20,7 +20,7 @@ header{
     background:var(--red);
     color:white;
     text-align:center;
-    padding:25px;
+    padding:20px;
     border-bottom:12px solid var(--green);
 }
 
@@ -85,9 +85,9 @@ picture img{
 }
 
 .mobile-icon{
-    display:none;
-    width:40px;
-    margin-bottom:10px;
+    display: block;
+    width: 70px;
+    margin: 20px auto;
 }
 
 footer{
@@ -98,39 +98,29 @@ footer{
 
     text-align:center;
 
-    padding:30px;
+    padding:20px;
 
 }
 
 @media (max-width:800px){
 
-main{
+    main{
+        display:flex;
+        flex-direction:column;
+    }
 
-display:flex;
+    .data,
+    .weather{
+        position:static;
+        margin:20px;
+    }
 
-flex-direction:column;
+    .weather h2::after{
+        content:"";
+    }
 
-}
-
-.data,
-.weather{
-
-position:static;
-
-margin:20px;
-
-}
-
-.weather h2::after{
-
-content:"";
-
-}
-
-.mobile-icon{
-
-display:block;
-
-}
+    .mobile-icon{
+        display:block;
+    }
 
 }

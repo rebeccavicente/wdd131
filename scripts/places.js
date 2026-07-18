@@ -1,3 +1,14 @@
+console.log("JavaScript is working!");
+
+// Footer copyright year
+document.getElementById("currentyear").textContent =
+new Date().getFullYear();
+
+
+// Footer last modified date
+document.getElementById("lastModified").textContent =
+`Last Modification: ${document.lastModified}`;
+
 const temperature = 30;
 const windSpeed = 12;
 
@@ -18,6 +29,3 @@ if (temperature <= 10 && windSpeed > 4.8) {
     windChill.textContent = "N/A";
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
-document.getElementById("lastModified").textContent = document.lastModified;
