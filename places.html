@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Miami</title>
+
+    <meta name="description" content="Discover Miami, Florida.">
+    <meta name="author" content="Rebecca Vicente">
+
+    <link rel="stylesheet" href="styles/places.css">
+
+    <script src="script/places.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Miami</h1>
+</header>
+
+<main>
+
+<picture>
+    <source media="(max-width: 600px)" srcset="images/miami-small.webp">
+    <source media="(max-width: 900px)" srcset="images/miami-medium.webp">
+    <img src="images/miami-large.webp" alt="Miami Skyline">
+</picture>
+
+<section class="data">
+
+    <h2>Data</h2>
+
+    <p><strong>State:</strong> Florida</p>
+    <p><strong>Population:</strong> 455,924</p>
+    <p><strong>Area:</strong> 56 sq mi</p>
+    <p><strong>Language:</strong> English, Spanish</p>
+    <p><strong>Currency:</strong> US Dollar</p>
+    <p><strong>Time Zone:</strong> UTC -5</p>
+    <p><strong>Elevation:</strong> 6 ft</p>
+
+</section>
+
+<section class="weather">
+
+    <h2>Weather</h2>
+
+    <img src="images/sun.svg" alt="Weather Icon" class="mobile-icon">
+
+    <p>Temperature: <span id="temp">30</span> °C</p>
+
+    <p>Conditions: Sunny</p>
+
+    <p>Wind: <span id="wind">12</span> km/h</p>
+
+    <p>Wind Chill:
+        <span id="windchill"></span>
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+&copy;
+<span id="year"></span>
+🌴 Rebecca Vicente 🌴 Miami
+</p>
+
+<p>
+Last Modification:
+<span id="lastModified"></span>
+</p>
+
+</footer>
+
+</body>
+</html>
