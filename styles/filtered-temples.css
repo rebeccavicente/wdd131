@@ -1,0 +1,150 @@
+/* Google Font */
+
+body {
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Header */
+
+header{
+    background:#9c1b30;
+    color:white;
+    padding:1rem;
+    position:relative;
+}
+
+
+/* Hamburger button */
+
+#menu{
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    position:absolute;
+    right:1rem;
+    top:1rem;
+    cursor:pointer;
+}
+
+
+
+header h1{
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+/* Navigation */
+
+/* Hide the navigation by default on mobile */
+nav{
+    display: none;
+    flex-direction: column;
+}
+
+/* Show it when JavaScript adds the class */
+nav.show{
+    display: flex;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:.75rem;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#9c1b30;
+    border-radius:5px;
+}
+
+/* Main */
+
+main{
+    max-width:900px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+main h2{
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+}
+
+figure{
+    text-align:center;
+}
+
+figure img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+figcaption{
+    margin-top:.5rem;
+    font-size:.9rem;
+}
+
+/* Footer */
+
+footer{
+    margin-top:2rem;
+    background:#9c1b30;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
+
+
+.gallery section{
+    background:#f3f3f3;
+    padding:1rem;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+.gallery h3{
+    margin-bottom:.5rem;
+}
+
+.gallery p{
+    margin:.25rem 0;
+}
+
+.gallery strong{
+    color:purple;
+    font-variant:small-caps;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    margin-top:1rem;
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}

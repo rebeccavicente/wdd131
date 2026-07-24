@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+    <meta name="description" content="Browse a collection of beautiful temple images from around the world in this responsive Temple Album created for the WDD 131 course.">
+    <meta name="author" content="Rebecca Vicente">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Mobile First -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Temple Album</h1>
+
+    <button id="menu" aria-label="Open Menu">☰</button>
+
+    <nav id="nav-menu">
+
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h2>Home</h2>
+
+    <section class="gallery"></section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        🚀 Rebecca Vicente 🚀 Brazil
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
