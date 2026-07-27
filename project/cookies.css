@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
 
 :root {
     --primary: #8B5E3C;
@@ -12,13 +12,19 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--background);
     color: var(--text);
+    margin: 0;
+    line-height: 1.6;
 }
 
 header {
     background-color: var(--primary);
-    color: white;
     padding: 1rem;
     text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 section {
@@ -32,6 +38,14 @@ h1,
 h2,
 h3 {
     font-family: "Playfair Display", serif;
+}
+
+header h1 {
+    color: white;
+}
+
+h2,
+h3 {
     color: var(--primary);
 }
 
