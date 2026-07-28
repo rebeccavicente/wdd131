@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Review</title>
+    <meta name="description" content="">
+    <meta name="author" content="Rebecca Vicente">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+
+
+
+<!-- Product Name -->
+
+<label for="product">Product Name:</label>
+
+<select id="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+</select>
+
+
+<!-- Overal rating -->
+
+<div class="ref">
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"></a>
+</div>
+<hr>
+
+<label>Overal Rating</label>
+<div class="stars">
+	<input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	<input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	<input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	<input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	<input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+</div>
+<div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank"></a></div>
+<hr>
+
+<!-- 
+Date of Installation
+Use a input of type date to allow the user to select the date the product was installed.
+The required attributes are an id, name, and required-->
+
+<!--Checkbox-->
+
+
+<div class="vcentered">
+    <p>Which features did you find useful in the product? (Check all that apply)</p>
+
+    <label for="durability">
+        <input type="checkbox" id="durability" name="features" value="Durability">
+        Durability
+    </label>
+
+    <label for="ease">
+        <input type="checkbox" id="ease" name="features" value="Ease of Use">
+        Ease of Use
+    </label>
+
+    <label for="performance">
+        <input type="checkbox" id="performance" name="features" value="Performance">
+        Performance
+    </label>
+
+    <label for="design">
+        <input type="checkbox" id="design" name="features" value="Design">
+        Design
+    </label>
+</div>
+
+
+<div class="ref">
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"></a>
+</div>
+<hr>
+
+<!-- Written Review-->
+<label for="alpha">Written Review (Optional)</label>
+<textarea id="alpha" name="alpha"></textarea>
+
+
+<div class="ref">
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"></a>
+</div>
+<hr>
+
+<!-- Name-->
+
+<form method="get" action="review.html">
+    <label for="name"> Your Name (Optional)</label>
+    <input type="text" id="name" name="name">
+
+    
+</form>
+
+
+<!-- Submit-->
+
+<button type="submit">Submit Review</button>
+
+
+
+
+
+
+
+
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+	margin: 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+	color: navy;
+	border-bottom: 1px solid #bbb;
+}
+
+hr {
+	margin-bottom: 40px;
+}
+
+label {
+	display: block;
+	font-weight: 700;
+}
+
+input[type=text], input[type=range], input[type=radio] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#alpha:focus, #fruit:focus {
+	background-color: #eee;
+}
+
+#alpha:valid, #fruit:valid {
+	background-color: #bed;
+}
+#alpha:invalid, #alpha:invalid {
+	background-color: #fff0f3;
+	border: 1px solid red;
+}
+#alpha:invalid::before {
+	content: "❌";
+}
+
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+/* Checkbox */
+input[type=checkbox] {
+	margin-left: 10px;
+}
+/* Note the enlargement from the standard, tiny checkbox */
+#task {
+	width: 25px;
+	height: 25px;
+}
+
+.vcentered {
+	display: flex;
+    flex-direction: column;
+	
+}
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+}
+
+/* other */
+.inline {
+	display: inline;
+}
+
+.ref {
+	font-size: 13px;
+	margin-top: 1rem;
+}
+
+
