@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Product Review</title>
-<meta name="description" content="Submit a product review.">
+<meta name="description" content="Submit a review of your product by selecting a product, rating its quality, choosing useful features, and sharing your experience.">
 <meta name="author" content="Rebecca">
 
 <link rel="stylesheet" href="review.css">
@@ -43,31 +43,20 @@
 
 <div class="stars">
 
-<label>
-☆
-<input type="radio" name="rating" id="one" value="1" required>
-</label>
+<input type="radio" id="one" name="rating" value="1" required>
+<label for="one">☆</label>
 
-<label>
-☆☆
-<input type="radio" name="rating" id="two" value="2">
-</label>
+<input type="radio" id="two" name="rating" value="2" required>
+<label for="two">☆☆</label>
 
-<label>
-☆☆☆
-<input type="radio" name="rating" id="three" value="3">
-</label>
+<input type="radio" id="three" name="rating" value="3" required>
+<label for="three">☆☆☆</label>
 
-<label>
-☆☆☆☆
-<input type="radio" name="rating" id="four" value="4">
-</label>
+<input type="radio" id="four" name="rating" value="4" required>
+<label for="four">☆☆☆☆</label>
 
-<label>
-☆☆☆☆☆
-<input type="radio" name="rating" id="five" value="5">
-</label>
-
+<input type="radio" id="five" name="rating" value="5" required>
+<label for="five">☆☆☆☆☆</label>
 </div>
 
 </div>
@@ -92,14 +81,17 @@ required>
 <span>Check all that apply</span>
 </label>
 
-<label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+<input type="checkbox" id="durability" name="features" value="Durability">
+<label for="durability">Durability</label>
 
-<label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+<input type="checkbox" id="ease" name="features" value="Ease of Use">
+<label for="ease">Ease of Use</label>
 
-<label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+<input type="checkbox" id="performance" name="features" value="Performance">
+<label for="performance">Performance</label>
 
-<label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
-
+<input type="checkbox" id="design" name="features" value="Design">
+<label for="design">Design</label>
 </div>
 
 
