@@ -1,164 +1,158 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rebecca Vicente">
-    <meta name="description" content="Website planning document for the Sweet Legacy Cookies project.">
-    <title>Sweet Legacy Cookies - Site Plan</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="cookies.css">
+<title>Sweet Legacy Cookies | Homemade Cookies Since 1995</title>
+
+<meta name="description" content="Discover Sweet Legacy Cookies, a family-inspired bakery offering handcrafted gourmet cookies made with premium ingredients, available for local pickup and delivery.">
+
+<meta name="author" content="Rebecca Vicente">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/larger.css">
+
+<script src="js/main.js" defer></script>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Sweet Legacy Cookies - Site Plan</h1>
-    </header>
+<header>
 
-    <main>
+<div class="logo">
+🍪 Sweet Legacy Cookies
+</div>
 
-        <section>
-            <h2>Site Name</h2>
+<button id="menuButton" aria-label="Open Navigation">
+☰
+</button>
 
-            <h3>🍪 Sweet Legacy Cookies</h3>
+<nav id="navigation">
 
-            <p>
-                I chose the name <strong>Sweet Legacy Cookies</strong> because my
-                website is about a fictional family-owned bakery that has been
-                making homemade cookies for over 30 years. The word
-                <em>Legacy</em> represents family traditions and recipes that have
-                been passed down through generations.
-            </p>
+<a href="siteplan.html">Home</a>
 
-            <p><strong>Optional Domain:</strong> sweetlegacycookies.com</p>
-        </section>
+<a href="cookies.html">Cookies</a>
 
-        <section>
-            <h2>Site Purpose</h2>
+<a href="contact.html">Contact</a>
 
-            <p>
-                Sweet Legacy Cookies is a fictional bakery website where visitors
-                can learn about the bakery's history, browse cookie flavors,
-                discover the premium ingredients used in every recipe, find store
-                and delivery information, and contact the bakery.
-            </p>
-        </section>
+</nav>
 
-        <section>
-            <h2>Scenarios</h2>
+</header>
 
-            <ul>
-                <li>What cookie flavors does Sweet Legacy Cookies offer?</li>
-                <li>Does the bakery offer delivery or local pickup?</li>
-            </ul>
-        </section>
+<main>
 
-        <section>
-            <h2>Color Schema</h2>
+<section class="hero">
 
-            <ul>
-                <li><strong>Warm Brown (#8B5E3C):</strong> Header, navigation, buttons, and headings.</li>
-                <li><strong>Cream (#FFF8EE):</strong> Page background.</li>
-            </ul>
-        </section>
+<img
+src="images/hero.jpg"
+alt="Fresh homemade cookies"
+loading="lazy">
 
-        <section>
-            <h2>Typography</h2>
+<div class="hero-text">
 
-            <ul>
-                <li><strong>Playfair Display:</strong> Headings.</li>
-                <li><strong>Poppins:</strong> Body text, navigation, and buttons.</li>
-            </ul>
-        </section>
+<h1>Homemade Cookies Since 1995</h1>
 
-        <section>
-            <h2>Wireframes</h2>
+<p>
+Crafted with love using family recipes that have delighted generations.
+</p>
 
-            <h3>Mobile View</h3>
-        <pre>
-------------------------------------------------
-LOGO
+<a href="cookies.html" class="button">
+Browse Cookies
+</a>
 
-☰ Menu
+</div>
 
-------------------------------------------------
+</section>
 
-Hero Image
+<section>
 
-Homemade Cookies
-Button
+<h2>Our Story</h2>
 
-------------------------------------------------
+<p>
 
-About Us
+Sweet Legacy Cookies is a fictional family-owned bakery inspired by decades of homemade traditions. Every cookie is baked using premium ingredients, time-tested recipes, and a passion for creating unforgettable treats.
 
-------------------------------------------------
+</p>
 
-Featured Cookies
-[Cookie Card]
-[Cookie Card]
-[Cookie Card]
+</section>
 
-------------------------------------------------
+<section>
 
-Premium Ingredients
+<h2>Featured Cookie</h2>
 
-------------------------------------------------
+<div id="featuredCookie">
 
-Delivery Info
+</div>
 
-------------------------------------------------
+</section>
 
-Contact Form
+<section>
 
-------------------------------------------------
+<h2>Why Customers Love Us</h2>
 
-Footer
-</pre>
+<div class="features">
 
+<div>
 
-<h3>Desktop View</h3>
+<h3>Premium Ingredients</h3>
 
-<pre>
---------------------------------------------------------------
-LOGO                Home About Cookies Delivery Contact
---------------------------------------------------------------
+<p>
 
-                    HERO IMAGE
+Real butter, Belgian chocolate, Madagascar vanilla, and locally sourced ingredients.
 
-          Homemade Cookies Since 1995
+</p>
 
-             [Shop Our Cookies]
+</div>
 
---------------------------------------------------------------
+<div>
 
- About Us             Featured Cookies
-                      [Card] [Card] [Card]
+<h3>Fresh Daily</h3>
 
---------------------------------------------------------------
+<p>
 
- Premium Ingredients      Delivery Information
+Every batch is baked fresh to order.
 
---------------------------------------------------------------
+</p>
 
- Contact Form             Store Information
+</div>
 
---------------------------------------------------------------
+<div>
 
- Footer
-</pre>
-        </section>
+<h3>Delivery Available</h3>
 
-    </main>
+<p>
 
-    <footer>
-        <p>&copy; 2026 Rebecca Vicente | WDD 131 Site Plan</p>
-    </footer>
+Pickup and local delivery make enjoying fresh cookies easy.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 Rebecca Vicente | WDD131 Final Project
+
+</p>
+
+</footer>
 
 </body>
+
 </html>

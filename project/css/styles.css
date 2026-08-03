@@ -1,0 +1,221 @@
+:root {
+    --primary: #8B5E3C;
+    --secondary: #D9A441;
+    --background: #FFF8EE;
+    --section: #F4E7D3;
+    --text: #4A2C1D;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .8rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background: var(--secondary);
+    color: black;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    margin-top: 1.5rem;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--secondary);
+    color: black;
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+    background: var(--section);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* ---------- Features ---------- */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.features div {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* ---------- Featured Cookie ---------- */
+
+#featuredCookie {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ---------- Forms ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    background: var(--secondary);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* ---------- Cookie Cards ---------- */
+
+.cookie-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cookie-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cookie-card img {
+    width: 100%;
+    display: block;
+}
+
+.cookie-card h3 {
+    color: var(--primary);
+    margin: .8rem 0;
+}
+
+.cookie-card p {
+    padding: 0 1rem 1rem;
+}

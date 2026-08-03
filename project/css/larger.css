@@ -1,0 +1,73 @@
+/* Desktop View */
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+        border-radius: 5px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem;
+        text-align: left;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cookie-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    section {
+        margin: 2rem auto;
+    }
+
+}
