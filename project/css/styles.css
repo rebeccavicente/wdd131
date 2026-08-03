@@ -139,9 +139,47 @@ section h2 {
 
 #featuredCookie {
     background: white;
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
 }
+
+#featuredCookie h3 {
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+#featuredCookie img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+#featuredCookie p {
+    font-size: 1.1rem;
+}
+
+#favoriteButton {
+    background: var(--secondary);
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#favoriteButton:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
 
 /* ---------- Footer ---------- */
 
